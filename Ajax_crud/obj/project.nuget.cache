@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ii2NstyFpT3HAgDMFiDlgYm7ylEZcFs5d+e0YvwBa7Oge6NYf5u8/O0Ml037n2XuH2lqGggfq9wv99/kx4ZmDQ==",
+  "success": true,
+  "projectFilePath": "D:\\Visual Studio\\Ajax_crud\\Ajax_crud.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Krisha Padaliya\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

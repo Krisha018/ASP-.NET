@@ -1,0 +1,51 @@
+﻿@{
+     ViewData["Title"] = "Country Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*@model Student_Registration.Areas.LOC_Country.Models.LOC_CountryModel;*@
+@model Student_Registration.Areas.LOC_Contry.Models.LOC_CountryModel;
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<div>
+    <form method="post" asp-controller="LOC_Country" asp-action="LOC_CountrySave" asp-area="LOC_Country">
+      
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" required="required"  placeholder="Country Name" value="@Model.CountryName" asp-for="CountryName">
+            <span asp-validation-for="CountryName" class="text-danger"></span>
+
+            <label for="name">Country Name</label>
+            <style>
+                
+
+                .form-floating label::before {
+                            content: "*";
+                            color: red;
+                        }
+
+                input[required]:valid + label {
+                    display: none;
+                }
+            </style>
+
+
+
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" value="@Model.CountryCode" asp-for="CountryCode" required="required" type="text" class="form-control" id="floatingPassword" placeholder="Country Code" />
+            <label>Country Code</label>
+            <span class="text-danger" asp-validation-for="CountryCode"></span>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <input type="hidden" name="CountryID" value="@Model.CountryID" />
+            <button type="submit" value="Save" class="submit btn btn-outline-primary">Save</button>
+        </div>
+    </form>
+</div>

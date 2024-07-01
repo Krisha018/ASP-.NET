@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Countrylist.cshtml";
+
+}
+<table class="table">
+    <td>
+    <th>Select Country:</th>
+    <th><input type="text"></th>
+    </td>
+
+    <td>
+    <th>Select Country:</th>
+    <th><input type="text"></th>
+    </td>
+
+    <td>
+    <th>Select Country:</th>
+    <th><input type="text"></th>
+    </td>
+</table>
+<span></span>
+<a class="btn btn-success" asp-action="AddCountry" asp-controller="HomeController">Add Country </a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">CountryName</th>
+            <th scope="col">CountryCode</th>
+            <th scope="col">Add Date</th>
+            <th scope="col">Modifi Date</th>
+
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>India</td>
+            <td>Ind</td>
+            <td>01-09-2023</td>
+            <td>03-04-2023</td>
+            <td>
+                <button type="button" class="btn btn-primary">Edit</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Pakistan</td>
+            <td>Pk</td>
+            <td>02-09-2023</td>
+            <td>01-04-2023</td>
+            <td>
+                <button type="button" class="btn btn-primary">Edit</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Australia</td>
+            <td>As</td>
+            <td>08-04-2023</td>
+            <td>07-09-2023</td>
+            <td>
+                <button type="button" class="btn btn-primary">Edit</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

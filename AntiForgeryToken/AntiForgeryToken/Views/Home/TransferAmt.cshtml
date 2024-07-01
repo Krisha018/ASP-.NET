@@ -1,0 +1,17 @@
+﻿<div class="tab-content sucess">
+    <form action="Home/TransferAmt" method="post">
+        <table>
+            <tr>
+                <td>Amount:</td>
+                <td><input type="number" name="amount" class="text-success" /></td>
+            </tr>
+            <tr>
+                <td>Amount No:</td>
+                <td><input type="number" name="account" class="text-success" /></td>
+            </tr>
+            <tr>
+\                <td colspan="2">@Html.AntiForgeryToken()<input type="submit" value="Transfer Money" class="text-success" /></td>
+            </tr>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+<h2>attacker</h2>
+<form action="http://localhost:5230/Home/TransferAmt" method="post">
+    <table>
+        <tr>
+            <td>Amount:</td>
+            <td><input type="number" name="amount" class="text-success" /></td>
+        </tr>
+        <tr>
+            <td>Amount No:</td>
+            <td><input type="number" name="account" class="text-success" /></td>
+        </tr>
+        <tr>
+            \
+            <td colspan="2"><input type="submit" value="play the game" class="text-success" /></td>
+        </tr>
+    </table>
+</form>

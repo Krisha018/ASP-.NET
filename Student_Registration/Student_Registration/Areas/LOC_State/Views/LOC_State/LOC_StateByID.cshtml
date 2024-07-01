@@ -1,0 +1,31 @@
+﻿﻿@using System.Data;
+@model DataTable
+<table class="table">
+    <thead>
+        <tr>
+
+            <th scope="col">State ID</th>
+            <th scope="col">Country ID</th>
+            <th scope="col">State Name</th>
+            <th scope="col">State Code</th>
+            <th scope="col">Created</th>
+            <th scope="col">Modified</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (DataRow dr in Model.Rows)
+            {
+                <tr>
+                    <td>@dr["StateID"]</td>
+                    <td>@dr["CountryID"]</td>
+                    <td>@dr["StateName"]</td>
+                    <td>@dr["StateCode"]</td>
+                    <td>@dr["Created"]</td>
+                    <td>@dr["Modified"]</td>
+                </tr>
+            }
+        }
+
+</table>
