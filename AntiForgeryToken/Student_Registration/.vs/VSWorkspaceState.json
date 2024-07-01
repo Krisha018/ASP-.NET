@@ -1,0 +1,18 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Student_Registration",
+    "\\Student_Registration\\Areas",
+    "\\Student_Registration\\Areas\\LOC_Country",
+    "\\Student_Registration\\Areas\\LOC_Country\\Views",
+    "\\Student_Registration\\Areas\\LOC_Country\\Views\\LOC_Country",
+    "\\Student_Registration\\Areas\\LOC_State",
+    "\\Student_Registration\\Areas\\LOC_State\\Controllers",
+    "\\Student_Registration\\Areas\\LOC_State\\Models",
+    "\\Student_Registration\\Areas\\LOC_State\\Views",
+    "\\Student_Registration\\Areas\\LOC_State\\Views\\LOC_State",
+    "\\Student_Registration\\wwwroot"
+  ],
+  "SelectedNode": "\\Student_Registration\\Areas\\LOC_State\\Controllers\\LOC_StateController.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "City List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Data
+@model DataTable
+
+
+<table class="table table-striped table-hover">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <form class="d-flex w-75" role="search" asp-area="LOC_City" asp-controller="LOC_City" asp-action="LOC_CityList">
+       
+        <input class=" small-input" type="text" placeholder="CityName" aria-label="Search" name="CityName">&nbsp&nbsp&nbsp;
+        <input class="small-input" type="text" placeholder="CityCode" aria-label="Search" name="CityCode">&nbsp&nbsp&nbsp;
+        <input class="small-input" type="text" placeholder="StateName" aria-label="Search" name="StateName">&nbsp&nbsp&nbsp;
+        <input class="small-input" type="text" placeholder="CountryName" aria-label="Search" name="CountryName">&nbsp&nbsp&nbsp;
+
+
+        <button class="btn btn-outline-success" type="submit">Search</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+        <button class="btn btn-outline-success" type="submit">Clear</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+    </form>
+
+
+
+   
+    <thead>
+        <tr>
+            <a class="btn btn-outline-primary" asp-action="LOC_CityAdd" asp-area="LOC_City" asp-controller="LOC_City">Add City</a></br></br>
+        </tr>
+        <tr>
+            <th scope="col">City ID</th>
+            <th scope="col">City Name</th>
+            <th scope="col">City Code</th>
+            <th scope="col">State Name</th>
+            <th scope="col">Country Name</th>
+           
+           
+            <th scope="col">Created</th>
+            <th scope="col">Modified</th>
+            <th scope="col" colspan="2"><center>Action</center></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow dataRow in Model.Rows)
+        {
+            <tr>
+                <td>@dataRow["CityID"]</td>
+                <td>@dataRow["CityName"]</td>
+                <td>@dataRow["CityCode"]</td>
+                <td>@dataRow["StateName"]</td>
+               
+                <td>@dataRow["CountryName"]</td>
+               
+
+                <td>@Convert.ToDateTime(dataRow["CreationDate"]).ToString("dd-MM-yyyy")</td>
+                <td>@Convert.ToDateTime(dataRow["Modified"]).ToString("dd-MM-yyyy")</td>
+                <td>
+                    <form method="post" asp-area="LOC_City" asp-controller="LOC_City" asp-action="LOC_CityDelete">
+                        <input type="hidden" value="@Convert.ToInt32(dataRow["CityID"])" name="CityID">
+                        <button type="submit" class="btn btn-outline-danger" value="Delete">Delete</button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-area="LOC_City" asp-controller="LOC_City" asp-action="LOC_CityAdd">
+                        <input type="hidden" value="@Convert.ToInt32(dataRow["CityID"])" name="CityID">
+                        <button type="submit" class="btn btn-outline-success" value="Edit">Edit</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

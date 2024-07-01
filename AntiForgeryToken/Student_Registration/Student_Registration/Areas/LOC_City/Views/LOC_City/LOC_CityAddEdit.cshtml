@@ -1,0 +1,55 @@
+﻿@using Student_Registration.Areas.LOC_City.Models;
+@{
+    ViewData["Title"] = "City Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Student_Registration.Areas.LOC_City.Models.LOC_CityModel;
+
+
+<div>
+    <form method="post" asp-area="LOC_City" asp-controller="LOC_City" asp-action="LOC_CitySave">
+        <div class="text-danger"></div>
+        <div class=" form-group">
+            <label>City Name</label>
+            <input type="text" class=" form-control" required="required" asp-for="CityName" placeholder="Enter City Name" />
+            <span asp-validation-for="CityName" class="text-danger"></span>
+        </div>
+        <br />
+        <style>
+
+
+            .form-group label::before {
+                content: "*";
+                color: red;
+            }
+
+            input[required]:valid + label {
+                display: none;
+            }
+        </style>
+
+        <div class=" form-group">
+            <label>City Code</label>
+            <input type="text" class=" form-control"required="required" asp-for="CityCode" placeholder="Enter City Code" />
+            <span asp-validation-for="CityCode" class="text-danger"></span>
+        </div> <br />
+        <div class="form-group">
+            <select class="form-control" asp-for="CountryID" asp-items="@(new SelectList(ViewBag.CountryList,"CountryID","CountryName"))" onchange="fnOnStateChange();">
+                <option value="">Select Country</option>
+            </select>
+        </div><br />
+        <div class="form-group">
+            <select class="form-control" asp-for="StateID" asp-items="@(new SelectList(ViewBag.StateList,"StateID","StateName"))">
+                <option value="">Select State</option>
+            </select>
+        </div> <br />
+
+        
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <input type="hidden" name="CityID" asp-for="CityID" />
+            <button type="submit" value="Save" class="submit btn btn-outline-primary">Save</button>
+        </div>
+    </form>
+</div>
+

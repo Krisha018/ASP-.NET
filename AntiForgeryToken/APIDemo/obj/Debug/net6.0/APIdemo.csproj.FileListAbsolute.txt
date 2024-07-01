@@ -1,0 +1,10 @@
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIdemo.csproj.AssemblyReference.cache
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIdemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIdemo.AssemblyInfoInputs.cache
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIdemo.AssemblyInfo.cs
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIdemo.csproj.CoreCompileInputs.cache
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIdemo.MvcApplicationPartsAssemblyInfo.cs
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIdemo.MvcApplicationPartsAssemblyInfo.cache
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIDemo.dll
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\refint\APIDemo.dll
+D:\Visual Studio\APIDemo\obj\Debug\net6.0\APIDemo.pdb
