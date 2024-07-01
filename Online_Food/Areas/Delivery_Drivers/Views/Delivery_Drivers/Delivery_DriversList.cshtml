@@ -1,0 +1,140 @@
+﻿@using System.Collections
+@using System.Data
+@{
+    Layout = "~/Areas/Layout/_AreaLayout.cshtml";
+
+}
+
+@model IEnumerable<Online_Food.Areas.Delivery_Drivers.Models.Delivery_DriversModel>;
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+
+}
+@if (TempData["DeleteMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["DeleteMessage"]</div>
+}
+@if (TempData["MessageFKReference"] != null)
+{
+    <div class="alert alert-danger">@TempData["MessageFKReference"]</div>
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add your meta tags and title here -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3>Search Users</h3>
+                        </h5><br />
+
+                        <!-- Search Form -->
+                        <form class="" role="form" asp-action="Delivery_DriversSearch" asp-controller="Delivery_Drivers" asp-area="Delivery_Drivers">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <label class="form-label">First Name:</label>
+                                            <input type="text" name="FirstName" class="form-control dt-input dt-full-name" data-column="1" placeholder="FirstName" data-column-index="0" fdprocessedid="2u7jd">
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <label class="form-label">Last Name:</label>
+                                            <input type="text" name="LastName" class="form-control dt-input" data-column="2" placeholder="LastName" data-column-index="1" fdprocessedid="yxqeh">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="m-3 btn btn-outline-success" type="submit">Search</button>
+                            <button class="m-3 btn btn-outline-dark" type="submit" asp-action="Delivery_DriversSearch" asp-controller="Delivery_Drivers" asp-area="Delivery_Drivers">Clear</button>
+                        </form>
+                        <!-- End Search Form -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users List Card -->
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3>Delivery_DriversList</h3>
+                        </h5><br />
+
+
+                        <!-- Add Users Button -->
+                        <div class="nav-link ml-auto">
+                            <a class=" btn btn-outline-success" asp-area="Delivery_Drivers" asp-controller="Delivery_Drivers" asp-action="Delivery_DriversAddEdit">+ Add Drivers</a>
+                        </div>
+
+
+                        <!-- Table with stripped rows -->
+                        <div class="table-responsive">
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">DriverID</th>
+                                        <th scope="col">FirstName</th>
+                                        <th scope="col">LastName</th>
+                                        <th scope="col">PhoneNumber</th>
+                                        <th scope="col">DriverLicenceNo</th>
+                                        <th scope="col">DriverLicencePhoto</th>
+                                        <th scope="col">Created</th>
+                                        <th scope="col">Modified</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+
+                                    </tr>
+                                </thead>
+                                @foreach (var dr in Model)
+                                {
+                                    <tbody>
+                                        <tr>
+                                            <td>@dr.DriverID</td>
+                                            <td>@dr.FirstName</td>
+                                            <td>@dr.LastName</td>
+                                            <td>@dr.PhoneNumber</td>
+                                            <td>@dr.DriverLicenceNo</td>
+                                            <td><img width="180" height="120" class="card-img-top" src="@dr.DriverLicencePhoto" alt="Licence image "></td>
+
+
+                                            <td>@Convert.ToDateTime(dr.Created).ToString("dd-MM-yyyy")</td>
+                                            <td>@Convert.ToDateTime(dr.Modified).ToString("dd-MM-yyyy")</td>
+
+                                            <td>
+                                                <form method="post" asp-area="Delivery_Drivers" asp-controller="Delivery_Drivers" asp-action="Delivery_DriversAddEdit" asp-route-DriverID="@dr.DriverID">
+                                                    <button type="submit" class="btn btn-outline-success"><i class="ti-file btn-icon-append"></i></button>
+                                                </form>
+                                            </td>
+                                            <td>
+
+                                                <a type="button" asp-area="Delivery_Drivers" asp-controller="Delivery_Drivers" asp-action="DeleteDrivers" asp-route-DriverID="@dr.DriverID" class="btn btn-outline-danger"><i class="ti-trash btn-icon-append"></i></a>
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                }
+                            </table>
+                        </div>
+                        <!-- End Table with stripped rows -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Users List Card -->
+        </div>
+    </div>
+</body>
+
+</html>

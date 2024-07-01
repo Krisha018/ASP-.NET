@@ -1,0 +1,50 @@
+﻿@using Online_Food.Areas.Cart.Models;
+@using System.Data;
+@using System.Collections;
+@model CartModel
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title"><h3>Cart Details</h3></div></br>
+            <hr>
+
+            <form method="post" asp-area="Cart" asp-controller="Cart" asp-action="SaveForAddEdit">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <input type="hidden" asp-for="CartID" />
+               
+
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>Qty</label>
+                    <input type="text" class=" form-control" asp-for="Qty" required="required" placeholder="Enter Qty" />
+
+
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label for="exampleInputEmail3">UserID</label>
+                    <input type="text" class=" form-control" required="required" asp-for="UserID" placeholder="Enter UserID" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>MenuItemID</label>
+                    <input type="text" class=" form-control" asp-for="MenuItemID" required="required" placeholder="Enter MenuItemID" />
+                </div>
+
+
+
+             
+               
+
+                <div class="form-group">
+                    <input type="submit" class=" btn btn-outline-success" value="Save">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>          

@@ -1,0 +1,28 @@
+﻿  <!-- Gallery Start -->
+<div class="container-fluid event py-6">
+    <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Latest Food </small>
+            <h1 class="display-5 mb-5">Our Social & Professional Food Gallery</h1>
+        </div>
+        <div class="tab-class text-center">
+            <div class="tab-content">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    @foreach (var dr in ViewBag.FoodOrderList)
+                    {
+                        <div class="col wow bounceInUp" data-wow-delay="0.3s">
+                            <div class="event-img position-relative">
+                                <img class="img-fluid rounded w-100" src="@dr.FoodImg" alt="">
+                                <div class="event-overlay d-flex flex-column p-4">
+                                    @*  <h4 class="me-auto">Wedding</h4> *@
+                                    <a href="@(dr.FoodImg)" data-lightbox="event-2" class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Gallery End -->

@@ -1,0 +1,282 @@
+﻿<!-- Add Cart Section Begin -->
+<style>
+    /* Container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Shop Cart Table */
+    .shop_cart_table {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    }
+
+    /* Cart Buttons */
+    .cart__btn,
+    .update_btn {
+        margin-top: 20px;
+    }
+
+        .cart__btn a,
+        .update_btn a {
+            display: inline-block;
+            background-color: red;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+            .cart__btn a:hover,
+            .update_btn a:hover {
+                background-color: red;
+            }
+
+    /* Discount Codes */
+    .discount__content {
+        margin-top: 20px;
+    }
+
+        .discount__content h6 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .discount__content input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .discount__content button {
+            padding: 10px 20px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .discount__content button:hover {
+                background-color: red;
+            }
+
+    /* Cart Total Proceed */
+    .cart_total_procced {
+        margin-top: 40px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    }
+
+        .cart_total_procced h6 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .cart_total_procced ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+            .cart_total_procced ul li {
+                margin-bottom: 10px;
+            }
+
+                .cart_total_procced ul li span {
+                    float: right;
+                    color: lightblue;
+                }
+
+    .primary-btn {
+        display: inline-block;
+        background-color: red;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+    }
+
+        .primary-btn:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<section class="shop-cart spad">
+    <div class="container">
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-lg-6">
+                <div class="cart__btn">
+                    <a href="#">Continue Order</a>
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-lg-6">
+                <div class="cart_btn update_btn">
+                    <a href="#"><span class="icon_loading"></span> Update Cart</a> </br></br>
+                </div>
+            </div>
+           
+            <!-- Third Column -->
+            <div class="col-lg-6">
+                <div class="discount__content">
+                    <h6>Discount Codes</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Enter your coupon code">
+                        <button type="submit" class="site-btn">Apply</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Fourth Column -->
+            <div class="col-lg-6">
+                <div class="card border-secondary mb-5">
+                    <div class="card-header bg-primary border-0">
+                        <h4 class="font-weight-semi-bold m-0">Cart Summary</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3 pt-1">
+                            <h6 class="font-weight-medium">Subtotal</h6>
+                            <h6 class="font-weight-medium">$150</h6>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-medium">Shipping</h6>
+                            <h6 class="font-weight-medium">$10</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer border-secondary bg-transparent">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h5 class="font-weight-bold">Total</h5>
+                            <h5 class="font-weight-bold">$160</h5>
+                        </div>
+                        <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth Column -->
+            <div class="col-lg-12">
+                <div class="shop_cart_table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Image</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var dr in ViewBag.Menu_ItemsList)
+                            {
+                                <tr>
+                                    <td class="cart_name">
+                                       @dr.MenuItemName
+                                    </td>
+                                    <td class="cart_product_item">
+                                        
+                                     
+                                  
+                                     
+                                         
+                                           <img src="@dr.MenuImg" alt="">
+                                        
+                                   
+
+                                   </td>
+                                    <td class="cart__price">₹@dr.Price</td>
+                                    <td class="cart__quantity">
+                                        <div class="pro-qty">
+                                            <input type="number" value="1" min="1">
+                                        </div>
+                                    </td>
+                                    <td class="cart__total">₹@dr.Price</td>
+                                    <td class="cart__close"><span class="icon_close"></span></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Add Cart Section End -->
+
+<!-- Food Cart table Section start -->
+<style>
+    .shop_cart_table {
+        overflow-x: auto;
+    }
+
+        .shop_cart_table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .shop_cart_table th,
+        .shop_cart_table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .shop_cart_table th {
+            text-align: left;
+            background-color: #f2f2f2;
+        }
+
+        .shop_cart_table td {
+            vertical-align: middle;
+        }
+
+    .cart_product_item img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    .cart_productitem_title h6 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .rating {
+        color: #ffc107; /* Yellow color for stars */
+    }
+
+    .pro-qty input {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .cart__total {
+        font-weight: bold;
+    }
+
+    .cart__close {
+        text-align: center;
+    }
+
+</style>
+
+
+<!-- Food Cart table Section End -->

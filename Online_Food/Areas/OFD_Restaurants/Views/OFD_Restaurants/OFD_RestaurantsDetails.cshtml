@@ -1,0 +1,54 @@
+﻿@using Online_Food.Areas.OFD_Restaurants.Models;
+@using System.Data;
+@using System.Collections;
+@model Online_Food.Areas.OFD_Restaurants.Models.OFD_RestaurantsModel;
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="col-lg-11 m-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title"><h3>Restaurants Details</h3></div>
+
+                    <form>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2">Name</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.Name</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">Description</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.Description</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">Address</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.Address</div>
+                        </div>
+                      
+                        <div class="form-group row">
+                            <div class="col-sm-2">PhoneNumber</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.PhoneNumber</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">Rating</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.Rating</div>
+                        </div>
+
+                        <tr>
+                            <td>
+                                <a type="button" asp-area="OFD_Restaurants" asp-controller="OFD_Restaurants" asp-action="OFD_RestaurantsAddEdit" asp-route-RestaurantID="@Model.RestaurantID">
+                                    <button type="button" class="btn btn-outline-primary">Edit</button>
+                                </a>
+
+                            </td>
+                        </tr>
+
+                        <a class="btn btn-outline-secondary" asp-area="OFD_Restaurants" asp-controller="OFD_Restaurants" asp-action="OFD_RestaurantsList">Back</a>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

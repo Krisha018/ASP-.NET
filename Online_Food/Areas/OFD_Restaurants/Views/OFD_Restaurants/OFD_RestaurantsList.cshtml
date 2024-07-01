@@ -1,0 +1,139 @@
+﻿@using System.Collections
+@using System.Data
+@{
+   
+    Layout = "~/Areas/Layout/_AreaLayout.cshtml";
+
+}
+
+@model IEnumerable<Online_Food.Areas.OFD_Restaurants.Models.OFD_RestaurantsModel>;
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+
+}
+@if (TempData["DeleteMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["DeleteMessage"]</div>
+}
+@if (TempData["MessageFKReference"] != null)
+{
+    <div class="alert alert-danger">@TempData["MessageFKReference"]</div>
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add your meta tags and title here -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3>Search Users</h3>
+                        </h5><br />
+
+                        <!-- Search Form -->
+                        <form class="" role="form" asp-action="OFD_RestaurantSearch" asp-controller="OFD_Restaurants" asp-area="OFD_Restaurants">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <label class="form-label">Name:</label>
+                                            <input type="text" name="Name" class="form-control dt-input dt-full-name" data-column="1" placeholder="Name" data-column-index="0" fdprocessedid="2u7jd">
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-lg-4">
+                                            <label class="form-label">Address:</label>
+                                            <input type="text" name="Address" class="form-control dt-input dt-full-name" data-column="1" placeholder="Address" data-column-index="0" fdprocessedid="2u7jd">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <button class="m-3 btn btn-outline-success" type="submit">Search</button>
+                            <button class="m-3 btn btn-outline-dark" type="submit" asp-action="OFD_RestaurantSearch" asp-controller="OFD_Restaurants" asp-area="OFD_Restaurants">Clear</button>
+                        </form>
+                        <!-- End Search Form -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users List Card -->
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3>OFD_RestaurantsList</h3>
+                        </h5><br />
+
+
+                        <!-- Add Users Button -->
+                        <div class="nav-link ml-auto">
+                            <a class=" btn btn-outline-success" asp-area="OFD_Restaurants" asp-controller="OFD_Restaurants" asp-action="OFD_RestaurantsAddEdit">+ Add Users</a>
+                        </div>
+
+
+                        <!-- Table with stripped rows -->
+                        <div class="table-responsive">
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">RestaurantID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">PhoneNumber</th>
+                                        <th scope="col">Rating</th>
+                                        <th scope="col">Created</th>
+                                        <th scope="col">Modified</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                @foreach (var dr in Model)
+                                {
+                                    <tbody>
+                                        <tr>
+                                            <td>@dr.RestaurantID</td>
+                                            <td>@dr.Name</td>
+                                            <td>@dr.Description</td>
+                                            <td>@dr.Address</td>
+                                            <td>@dr.PhoneNumber</td>
+                                            <td>@dr.Rating</td>
+                                            <td>@Convert.ToDateTime(dr.Created).ToString("dd-MM-yyyy")</td>
+                                            <td>@Convert.ToDateTime(dr.Modified).ToString("dd-MM-yyyy")</td>
+
+                                            <td>
+                                                <form method="post" asp-area="OFD_Restaurants" asp-controller="OFD_Restaurants" asp-action="OFD_RestaurantsDetails" asp-route-RestaurantID="@dr.RestaurantID">
+                                                    <button type="submit" class="btn btn-outline-success"><i class="ti-file btn-icon-append"></i></button>
+                                                </form>
+                                            </td>
+                                            <td>
+
+                                                <a type="button" asp-area="OFD_Restaurants" asp-controller="OFD_Restaurants" asp-action="DeleteUsers" asp-route-RestaurantID="@dr.RestaurantID" class="btn btn-outline-danger"><i class="ti-trash btn-icon-append"></i></a>
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                }
+                            </table>
+                        </div>
+                        <!-- End Table with stripped rows -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Users List Card -->
+        </div>
+    </div>
+</body>
+
+</html>

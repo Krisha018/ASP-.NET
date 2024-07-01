@@ -1,0 +1,57 @@
+﻿@using Online_Food.Areas.FoodOrder.Models;
+@using System.Data;
+@using System.Collections;
+@model Online_Food.Areas.FoodOrder.Models.FoodOrderModel;
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="col-lg-11 m-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title"><h3>Food Details</h3></div>
+
+                    <form>
+
+                        @* <div class="form-group row">
+                            <div class="col-sm-2">UserID</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.UserID</div>
+                        </div> *@
+
+                        <div class="form-group row">
+                            <div class="col-sm-2">FoodImg</div>
+                        <div class="col-sm-10 form-control form-control-rounded">@Model.FoodImg</div>
+                </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2">OrderDate</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.OrderDate</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">TotalAmount</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.TotalAmount</div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2">DeliveryAddress</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.DeliveryAddress</div>
+                        </div>
+                       
+
+                        <tr>
+                            <td>
+                                <a type="button" asp-area="FoodOrder" asp-controller="FoodOrder" asp-action="FoodOrderAddEdit" asp-route-OrderID="@Model.OrderID">
+                                    <button type="button" class="btn btn-outline-primary">Edit</button>
+                                </a>
+
+                            </td>
+                        </tr>
+
+                        <a class="btn btn-outline-secondary" asp-area="FoodOrder" asp-controller="FoodOrder" asp-action="FoodOrderList">Back</a>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+﻿@using Online_Food.Areas.Category.Models;
+@using System.Data;
+@using System.Collections;
+@model CategoryModel
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title"><h3>Category Details</h3></div></br>
+            <hr>
+
+            <form method="post" asp-area="Category" asp-controller="Category" asp-action="SaveForAddEdit">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <input type="hidden" asp-for="CategoryID" />
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label for="exampleInputName1">CategoryName</label>
+                    <input type="text" class=" form-control" asp-for="CategoryName" required="required" placeholder="Enter CategoryName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label for="exampleInputEmail3">CategoryType</label>
+                    <input type="text" class=" form-control" asp-for="CategoryType" required="required" placeholder="Enter CategoryType" />
+                </div>
+               
+                <div class="form-group">
+                    <input type="submit" class=" btn btn-outline-success" value="Save">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>          

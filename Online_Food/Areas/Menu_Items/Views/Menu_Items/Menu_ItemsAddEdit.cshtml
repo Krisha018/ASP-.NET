@@ -1,0 +1,99 @@
+﻿@using Online_Food.Areas.Menu_Items.Models;
+@using System.Data;
+@using System.Collections;
+@model Menu_ItemsModel
+
+@* @section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} *@
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title"><h3>Menu Details</h3></div></br>
+            <hr>
+
+            <form method="post" asp-area="Menu_Items" asp-controller="Menu_Items" asp-action="SaveForAddEdit">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <input type="hidden" asp-for="MenuItemID" />
+
+                <div class="mb-3">
+                    <label for="formValidationName" class="form-label"><span class="text-danger" required="required">* </span>Select Name</label>
+                    <select id="inputState" class="form-control" asp-for="RestaurantID"
+                            asp-items="@(new SelectList(ViewBag.Restaurant_DropDownList,"RestaurantID","Name"))">
+
+                        <option disabled selected>Select Name</option>
+                    </select>
+
+                </div>
+
+@* 
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>MenuImg</label>
+
+                    <input type="file" class="form-control form-control-rounded" placeholder="MenuImg" asp-for="@Model.MenuImg" required="required">
+
+                </div> *@
+
+             
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>MenuImg</label>
+                    <input type="text" class=" form-control" asp-for="MenuImg" required="required" placeholder="Enter MenuImg" />
+                    @*  <span asp-validation-for="Description" class="text-danger"></span> *@
+
+                </div>
+
+
+                @* <div class="form-group col-50 ">
+                    <b><label for="exampleFormControlSelect1" >Select File</label></b>
+                    <input type="file" asp-for="@Model.MenuImg" class="form-control" />
+                </div>
+ *@
+
+
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label for="exampleInputEmail3">MenuItemName</label>
+                    <input type="text" class=" form-control" asp-for="MenuItemName" required="required"  placeholder="Enter MenuItemName" />
+                   @*  <span asp-validation-for="MenuItemName" class="text-danger"></span> *@
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>Description</label>
+                    <input type="text" class=" form-control" asp-for="Description" required="required"  placeholder="Enter Description" />
+                   @*  <span asp-validation-for="Description" class="text-danger"></span> *@
+
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>Price</label>
+                    <input type="text" class=" form-control" asp-for="Price" required="required"  placeholder="Enter Price" />
+                   @*  <span asp-validation-for="Price" class="text-danger"></span> *@
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="formValidationName" class="form-label"><span class="text-danger" required="required">* </span>Select Category</label>
+                    <select id="inputState" class="form-control" asp-for="CategoryID"
+                            asp-items="@(new SelectList(ViewBag.Category_DropDownList,"CategoryID","CategoryName"))">
+
+                        <option disabled selected>Select Category</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+                    <input type="submit" class=" btn btn-outline-success" value="Save">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>          

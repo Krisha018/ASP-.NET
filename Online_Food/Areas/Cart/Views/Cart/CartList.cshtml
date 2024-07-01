@@ -1,0 +1,104 @@
+﻿@using System.Collections
+@using System.Data
+@{
+
+    Layout = "~/Areas/Layout/_AreaLayout.cshtml";
+
+}
+
+@model IEnumerable<Online_Food.Areas.Cart.Models.CartModel>;
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+
+}
+@if (TempData["DeleteMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["DeleteMessage"]</div>
+}
+@if (TempData["MessageFKReference"] != null)
+{
+    <div class="alert alert-danger">@TempData["MessageFKReference"]</div>
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add your meta tags and title here -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          
+            <!-- Users List Card -->
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3>CartList</h3>
+                        </h5><br />
+
+
+                        <!-- Add Users Button -->
+                        <div class="nav-link ml-auto">
+                            <a class=" btn btn-outline-success" asp-area="Cart" asp-controller="Cart" asp-action="CartAddEdit">+ Add Cart</a>
+                        </div>
+
+
+                        <!-- Table with stripped rows -->
+                        <div class="table-responsive">
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                       
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">UserID</th>
+                                        <th scope="col">CartID</th>
+                                        <th scope="col">MenuItemID</th>
+                                        
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                @foreach (var dr in Model)
+                                {
+                                    <tbody>
+                                        <tr>
+
+                                            <td>@dr.Qty</td>
+                                            <td>@dr.UserID</td>
+                                            <td>@dr.CartID</td>
+                                            <td>@dr.MenuItemID</td>
+                                        
+                                          
+                                            <td>
+                                                <form method="post" asp-area="Cart" asp-controller="Cart" asp-action="CartAddEdit" asp-route-CartID="@dr.CartID">
+                                                    <button type="submit" class="btn btn-outline-success"><i class="ti-file btn-icon-append"></i></button>
+                                                </form>
+                                            </td>
+                                            <td>
+
+                                                <a type="button" asp-area="Cart" asp-controller="Cart" asp-action="DeleteCart" asp-route-CartID="@dr.CartID" class="btn btn-outline-danger"><i class="ti-trash btn-icon-append"></i></a>
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                }
+                            </table>
+                        </div>
+                        <!-- End Table with stripped rows -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Users List Card -->
+        </div>
+    </div>
+</body>
+
+</html>

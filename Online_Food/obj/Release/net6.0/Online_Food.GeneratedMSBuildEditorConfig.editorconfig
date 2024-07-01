@@ -1,0 +1,387 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Online_Food
+build_property.RootNamespace = Online_Food
+build_property.ProjectDir = D:\Visual Studio\Online_Food\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Visual Studio\Online_Food
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Visual Studio/Online_Food/Areas/About/Views/About/AboutList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRcVmlld3NcQWJvdXRcQWJvdXRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/About/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/About/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWJvdXRcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Admin/Views - Copy/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MgLSBDb3B5XEFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Admin/Views - Copy/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MgLSBDb3B5XF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Admin/Views - Copy/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3MgLSBDb3B5XF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Admin/Views/Admin/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Booking/Views/Booking/BookingAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQm9va2luZ1xWaWV3c1xCb29raW5nXEJvb2tpbmdBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Booking/Views/Booking/BookingDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQm9va2luZ1xWaWV3c1xCb29raW5nXEJvb2tpbmdEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Booking/Views/Booking/BookingList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQm9va2luZ1xWaWV3c1xCb29raW5nXEJvb2tpbmdMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Booking/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQm9va2luZ1xWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Booking/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQm9va2luZ1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Cart/Views/Cart/CartAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FydFxWaWV3c1xDYXJ0XENhcnRBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Cart/Views/Cart/CartDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FydFxWaWV3c1xDYXJ0XENhcnREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Cart/Views/Cart/CartList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FydFxWaWV3c1xDYXJ0XENhcnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Cart/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FydFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Cart/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2FydFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Category/Views/Category/CategoryAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2F0ZWdvcnlcVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Category/Views/Category/CategoryDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2F0ZWdvcnlcVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Category/Views/Category/CategoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2F0ZWdvcnlcVmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Category/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2F0ZWdvcnlcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Category/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2F0ZWdvcnlcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Delivery_Drivers/Views/Delivery_Drivers/Delivery_DriversAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlfRHJpdmVyc1xWaWV3c1xEZWxpdmVyeV9Ecml2ZXJzXERlbGl2ZXJ5X0RyaXZlcnNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Delivery_Drivers/Views/Delivery_Drivers/Delivery_DriversDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlfRHJpdmVyc1xWaWV3c1xEZWxpdmVyeV9Ecml2ZXJzXERlbGl2ZXJ5X0RyaXZlcnNEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Delivery_Drivers/Views/Delivery_Drivers/Delivery_DriversList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlfRHJpdmVyc1xWaWV3c1xEZWxpdmVyeV9Ecml2ZXJzXERlbGl2ZXJ5X0RyaXZlcnNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Delivery_Drivers/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlfRHJpdmVyc1xWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Delivery_Drivers/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVsaXZlcnlfRHJpdmVyc1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/FoodOrder/Views/FoodOrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRm9vZE9yZGVyXFZpZXdzXEZvb2RPcmRlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/FoodOrder/Views/FoodOrder/FoodOrderAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRm9vZE9yZGVyXFZpZXdzXEZvb2RPcmRlclxGb29kT3JkZXJBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/FoodOrder/Views/FoodOrder/FoodOrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRm9vZE9yZGVyXFZpZXdzXEZvb2RPcmRlclxGb29kT3JkZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/FoodOrder/Views/FoodOrder/FoodOrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRm9vZE9yZGVyXFZpZXdzXEZvb2RPcmRlclxGb29kT3JkZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/FoodOrder/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRm9vZE9yZGVyXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/FoodOrder/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRm9vZE9yZGVyXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Layout/_AreaLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGF5b3V0XF9BcmVhTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Layout/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGF5b3V0XF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Login/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5cVmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Login/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTG9naW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Menu/Views/Menu/MenuList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVudVxWaWV3c1xNZW51XE1lbnVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Menu/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVudVxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Menu_Items/Views/Menu_Items/Menu_ItemsAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVudV9JdGVtc1xWaWV3c1xNZW51X0l0ZW1zXE1lbnVfSXRlbXNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Menu_Items/Views/Menu_Items/Menu_ItemsDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVudV9JdGVtc1xWaWV3c1xNZW51X0l0ZW1zXE1lbnVfSXRlbXNEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Menu_Items/Views/Menu_Items/Menu_ItemsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVudV9JdGVtc1xWaWV3c1xNZW51X0l0ZW1zXE1lbnVfSXRlbXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Menu_Items/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVudV9JdGVtc1xWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Menu_Items/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVudV9JdGVtc1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Restaurants/Views/OFD_Restaurants/OFD_RestaurantsAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1Jlc3RhdXJhbnRzXFZpZXdzXE9GRF9SZXN0YXVyYW50c1xPRkRfUmVzdGF1cmFudHNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Restaurants/Views/OFD_Restaurants/OFD_RestaurantsDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1Jlc3RhdXJhbnRzXFZpZXdzXE9GRF9SZXN0YXVyYW50c1xPRkRfUmVzdGF1cmFudHNEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Restaurants/Views/OFD_Restaurants/OFD_RestaurantsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1Jlc3RhdXJhbnRzXFZpZXdzXE9GRF9SZXN0YXVyYW50c1xPRkRfUmVzdGF1cmFudHNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Restaurants/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1Jlc3RhdXJhbnRzXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Restaurants/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1Jlc3RhdXJhbnRzXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Users/Views/OFD_Users/OFD_UserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1VzZXJzXFZpZXdzXE9GRF9Vc2Vyc1xPRkRfVXNlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Users/Views/OFD_Users/OFD_UsersAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1VzZXJzXFZpZXdzXE9GRF9Vc2Vyc1xPRkRfVXNlcnNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Users/Views/OFD_Users/OFD_UsersList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1VzZXJzXFZpZXdzXE9GRF9Vc2Vyc1xPRkRfVXNlcnNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Users/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1VzZXJzXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/OFD_Users/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT0ZEX1VzZXJzXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Orders/Views/Orders/OrdersAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3JkZXJzXFZpZXdzXE9yZGVyc1xPcmRlcnNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Orders/Views/Orders/OrdersDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3JkZXJzXFZpZXdzXE9yZGVyc1xPcmRlcnNEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Orders/Views/Orders/OrdersList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3JkZXJzXFZpZXdzXE9yZGVyc1xPcmRlcnNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Orders/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3JkZXJzXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Orders/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3JkZXJzXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Payments/Views/Payments/PaymentsAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudHNcVmlld3NcUGF5bWVudHNcUGF5bWVudHNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Payments/Views/Payments/PaymentsDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudHNcVmlld3NcUGF5bWVudHNcUGF5bWVudHNEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Payments/Views/Payments/PaymentsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudHNcVmlld3NcUGF5bWVudHNcUGF5bWVudHNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Payments/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudHNcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/Payments/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF5bWVudHNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Booking/Views/User_Booking/User_BookingAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9Cb29raW5nXFZpZXdzXFVzZXJfQm9va2luZ1xVc2VyX0Jvb2tpbmdBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Booking/Views/User_Booking/User_BookingList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9Cb29raW5nXFZpZXdzXFVzZXJfQm9va2luZ1xVc2VyX0Jvb2tpbmdMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Booking/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9Cb29raW5nXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Cart/Views/User_Cart/Add_Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9DYXJ0XFZpZXdzXFVzZXJfQ2FydFxBZGRfQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Cart/Views/User_Cart/BuyOrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9DYXJ0XFZpZXdzXFVzZXJfQ2FydFxCdXlPcmRlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Cart/Views/User_Cart/User_CartList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9DYXJ0XFZpZXdzXFVzZXJfQ2FydFxVc2VyX0NhcnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Cart/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9DYXJ0XFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Delivery/Views/User_Delivery/User_DeliveryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9EZWxpdmVyeVxWaWV3c1xVc2VyX0RlbGl2ZXJ5XFVzZXJfRGVsaXZlcnlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Delivery/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9EZWxpdmVyeVxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Gallery/Views/User_Gallery/User_GalleryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9HYWxsZXJ5XFZpZXdzXFVzZXJfR2FsbGVyeVxVc2VyX0dhbGxlcnlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Areas/User_Gallery/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcl9HYWxsZXJ5XFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/DAL/DAL_Helper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = REFMXERBTF9IZWxwZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/DAL/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = REFMXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/DAL/OFD_Users_Base_DAL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = REFMXE9GRF9Vc2Vyc19CYXNlX0RBTC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/DAL/OFD_Users_Main_DAL.cshtml]
+build_metadata.AdditionalFiles.TargetPath = REFMXE9GRF9Vc2Vyc19NYWluX0RBTC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Home/UserCount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyQ291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Shared/_UserLoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTG9naW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Online_Food/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t0x5lwydq1

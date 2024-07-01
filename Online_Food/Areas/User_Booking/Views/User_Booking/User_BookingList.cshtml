@@ -1,0 +1,100 @@
+﻿@using Online_Food.Areas.User_Booking.Models;
+@using System.Data;
+@using System.Collections;
+@model Online_Food.Areas.User_Booking.Models.User_BookingModel;
+
+
+
+
+
+<!-- Book Us Start -->
+<div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-1">
+                <img src="~/User/img/background-site.jpg" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+            </div>
+            <div class="col-10">
+                <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                    <div class="text-center">
+                        <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Book Us</small>
+                        <h1 class="display-5 mb-5">Where you want Our Services</h1>
+                    </div>
+
+                    <div class="row g-4 form">
+                        <form method="post" asp-area="Booking" asp-controller="Booking" asp-action="SaveForAddEdit">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <input type="hidden" asp-for="BookingID" />
+
+                            @*  <div class="mb-3">
+                            <label for="formValidationName" class="form-label"><span class="text-danger">* </span>Select Name</label>
+                                <select id="inputState" class="form-control" asp-for="UserID" asp-items="@(new SelectList( ViewBag.OFD_User_DropDownList,"UserID","FirstName"))">
+
+                                    <option disabled selected>Select Name</option>
+                            </select>
+
+                            </div>   *@
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                                        <label>Address</label>
+                                        <input type="text" class="form-control" required="required" asp-for="Address" placeholder="Address">
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 ">
+                                    <div class="form-group">
+                                        <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                                        <label for="exampleInputEmail3">OrderDate</label>
+                                        <input type="datetime-local" class=" form-control" required="required" asp-for="OrderDate" placeholder="Enter OrderDate" />
+                                    </div>
+                                </div>
+
+                               @*   <div class="mb-3">
+                                <label for="formValidationName" class="form-label"><span class="text-danger">* </span>Select Menu</label>
+                                <select id="inputState" class="form-control" asp-for="MenuItemID" asp-items="@(new SelectList(  ViewBag.Menu_DropDownList,"MenuItemID","MenuItemName"))">
+
+                                <option disabled selected>Select Menu</option>
+                                </select>
+
+                                </div>  *@
+
+                                <div class="col-lg-6 col-md-6  mt-4">
+                                    <div class="form-group">
+                                        <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                                        <label>Email</label>
+                                        <input type="text" class=" form-control" required="required" asp-for="Email" placeholder="Enter Email" />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mt-4">
+                                    <div class="form-group">
+                                        <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                                        <label>PhoneNumber</label>
+                                        <input type="text" class=" form-control" required="required" asp-for="PhoneNumber" placeholder="Enter PhoneNumber" />
+
+                                    </div>
+                                </div>
+                                </br>
+
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                                </div>
+
+                                
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <img src="~/User/img/background-site.jpg" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Book Us End -->
+ 
+

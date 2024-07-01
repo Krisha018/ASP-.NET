@@ -1,0 +1,106 @@
+﻿@using System.Collections
+
+
+@model Online_Food.Areas.Login.Models.LoginModel;
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online-Food Delivery website</title>
+    <meta name="description" content="Online-Food Delivery website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png">
+    <link rel="apple-touch-icon" href="https://t3.ftcdn.net/jpg/02/86/12/22/360_F_286122238_zWzctXPgodrwNOnkBXpjzuO8NeS0T0oJ.jpg" style="height:100px">
+    <link rel="shortcut icon" href="https://t3.ftcdn.net/jpg/02/86/12/22/360_F_286122238_zWzctXPgodrwNOnkBXpjzuO8NeS0T0oJ.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="~/AreaLayout/assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="~/AreaLayout/assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+</head>
+<body class="bg-light">
+
+    <div class="sufee-login d-flex align-content-center flex-wrap">
+        <div class="container" style="width:32%;height:initial">
+            <div class="login-content" style="padding:30px;  box-shadow: 0px 0px 15px 0px rgba(0, 0.1, 0, 0.1);background-color: #ffffff;">
+
+                <div class="login-form" style="padding-block-start:50px" >
+                        <div class="login-logo" >
+                            <a href="index.html" >
+                                <img class="align-content" src="~/AreaLayout/images/foodlogo.jpg" alt="" width="80%" margin-top: 20px;margin-bottom: auto;>
+                            </a>
+                        </div>
+                    <div class=" b-t-30 text-center" style="fontSize" ="30px">
+                        <h2 style="font-family:Algerian;font-size:29px;text-align: center; color: #ff6347;padding-bottom:10px; text-align: center;"> Online Food Delivery</h2>
+                        
+                    </div>
+                <style>
+                        
+                </style>
+
+                    <form class="pt-3" asp-area="Login" asp-controller="Login" asp-action="Index" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Email</label>
+                            <input type="email" class="form-control form-control-lg" required="required" asp-for="Email" placeholder=" Email">
+                        </div>
+
+                        <div class="form-group" data-validate="Enter password">
+                            <span class="btn-show-pass">
+                                <i class="mdi-eye-check"></i>
+                            </span>
+                            <label for="exampleInputName1">Password</label>
+                            <input type="password" class="form-control form-control-lg" required="required" asp-for="Password" placeholder="Password">
+                            <span class="focus-input100" data-placeholder="Password"></span>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember Me
+                            </label>
+                            <label class="pull-right">
+                                <a href="#" class="auth-link text-black">Forgot password?</a>
+                            </label>
+
+                        </div>
+                        <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+                       @*  <div class="social-login-content">
+                            <div class="social-button">
+                                <button type="button" class="btn social facebook btn-flat btn-addon mb-3"><i class="ti-facebook"></i>Sign in with facebook</button>
+                            </div>
+                        </div> *@
+                        <div class="text-center mt-4 font-weight-light">
+                            Don't have an account? <a href="register.html" class="text-primary">Create</a>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="~/AreaLayout/assets/js/main.js"></script>
+
+</body>
+</html>
+
+

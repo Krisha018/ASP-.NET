@@ -1,0 +1,113 @@
+﻿ <!-- Buy Order Section Start -->
+@model IEnumerable<Online_Food.Areas.Menu_Items.Models.Menu_ItemsModel>;
+
+<div class="container-fluid py-5">
+    <div class="row px-xl-5">
+        <div class="col-lg-5 pb-5">
+            <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner border rounded">
+                    <div class="carousel-item active">
+                         
+                        <img class="d-block w-100 rounded" src="~/Food/food1.png" alt="Image">
+                            
+                    </div>
+
+                   
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="col-lg-7 pb-5">
+            <h4 class="font-weight-bold">Our Food</h4>
+            <div class="d-flex align-items-center mb-3">
+                <div class="text-primary mr-2">
+                    <small class="fas fa-star"></small>
+                    <small class="fas fa-star"></small>
+                    <small class="fas fa-star"></small>
+                    <small class="fas fa-star-half-alt"></small>
+                    <small class="far fa-star"></small>
+                </div>
+                <small class="pt-1">(50 Reviews)</small>
+            </div>
+            <h4 class="font-weight-bold mb-3">₹150.00</h4>
+            <p class="mb-4">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc invidunt ipsum et, labore clita lorem magna lorem ut. Erat lorem duo dolor no sea nonumy. Accus labore stet, est lorem sit diam sea et justo, amet at lorem et eirmod ipsum diam et rebum kasd rebum.</p>
+
+            <div class="d-flex align-items-center mb-4">
+                <div class="input-group quantity mr-3" style="width: 150px;">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-primary btn-minus" type="button">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="form-control text-center" value="1" style="padding: 5px 10px;">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary btn-plus" type="button">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const input = document.querySelector('.input-group.quantity input');
+                        const minusBtn = document.querySelector('.btn-minus');
+                        const plusBtn = document.querySelector('.btn-plus');
+
+                        // Function to increment quantity
+                        plusBtn.addEventListener('click', function () {
+                            input.value = parseInt(input.value) + 1;
+                        });
+
+                        // Function to decrement quantity
+                        minusBtn.addEventListener('click', function () {
+                            if (parseInt(input.value) > 1) {
+                                input.value = parseInt(input.value) - 1;
+                            }
+                        });
+                    });
+                </script>
+
+                <!-- Add space here -->
+                <div style="width: 10px;"></div>
+                <!-- End of added space -->
+
+
+                <div class="order-icon">
+                    <div class="order-icon">
+                        <button onclick="window.location.href='@Url.Action("Add_Cart", "User_Cart", new { area = "User_Cart" })'" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">
+                            <i class="fa fa-shopping-cart mr-1"></i> Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <style>
+                  
+                </style>
+
+            </div>
+
+            <div class="d-flex">
+                <p class="text-dark font-weight-medium mr-2">Share on:</p>
+                <div class="d-inline-flex">
+                    <a class="text-dark px-2" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="#">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Buy Order Section End -->
+
+

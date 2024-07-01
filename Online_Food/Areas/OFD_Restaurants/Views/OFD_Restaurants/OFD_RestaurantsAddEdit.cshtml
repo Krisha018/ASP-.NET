@@ -1,0 +1,52 @@
+﻿@using Online_Food.Areas.OFD_Restaurants.Models;
+@using System.Data;
+@using System.Collections;
+@model OFD_RestaurantsModel
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title"><h3>Restaurants Details</h3></div></br>
+            <hr>
+
+            <form method="post" asp-area="OFD_Restaurants" asp-controller="OFD_Restaurants" asp-action="SaveForAddEdit">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <input type="hidden" asp-for="RestaurantID" />
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label for="exampleInputName1">Name</label>
+                    <input type="text" class=" form-control" asp-for="Name" required="required" placeholder="Enter Name" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label for="exampleInputEmail3">Description</label>
+                    <input type="text" class=" form-control" required="required"  asp-for="Description" placeholder="Enter Description" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>Address</label>
+                    <input type="text" class=" form-control" required="required"  asp-for="Address" placeholder="Enter Address" />
+                </div>
+
+                
+
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>PhoneNumber</label>
+                    <input type="text" class=" form-control" required="required"  asp-for="PhoneNumber" placeholder="Enter PhoneNumber" />
+
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="formValidationName"><span class="text-danger">* </span></label>
+                    <label>Rating</label>
+                    <input type="text" class="form-control" required="required"  asp-for="Rating" placeholder="Rating">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class=" btn btn-outline-success" value="Save">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>          

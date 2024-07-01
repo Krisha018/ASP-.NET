@@ -1,0 +1,55 @@
+﻿@using Online_Food.Areas.Delivery_Drivers.Models;
+@using System.Data;
+@using System.Collections;
+@model Online_Food.Areas.Delivery_Drivers.Models.Delivery_DriversModel;
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="col-lg-11 m-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title"><h3>Delivery Details</h3></div>
+
+                    <form>
+
+                        <div class="form-group row">
+                            <div class="col-sm-2">FirstName</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.FirstName</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">LastName</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.LastName</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">PhoneNumber</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.PhoneNumber</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">DriverLicenceNo</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.DriverLicenceNo</div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">DriverLicencePhoto</div>
+                            <div class="col-sm-10 form-control form-control-rounded">@Model.DriverLicencePhoto</div>
+                        </div>
+                       
+                     
+
+                        <tr>
+                            <td>
+                                <a type="button" asp-area="Delivery_Drivers" asp-controller="Delivery_Drivers" asp-action="Delivery_DriversAddEdit" asp-route-DriverID="@Model.DriverID">
+                                    <button type="button" class="btn btn-outline-primary">Edit</button>
+                                </a>
+
+                            </td>
+                        </tr>
+
+                        <a class="btn btn-outline-secondary" asp-area="Delivery_Drivers" asp-controller="Delivery_Drivers" asp-action="Delivery_DriversList">Back</a>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+﻿@using System.Collections
+@using System.Data
+@{
+
+    Layout = "~/Areas/Layout/_AreaLayout.cshtml";
+
+}
+
+@model IEnumerable<Online_Food.Areas.Orders.Models.OrdersModel>;
+
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+
+}
+@if (TempData["DeleteMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["DeleteMessage"]</div>
+}
+@if (TempData["MessageFKReference"] != null)
+{
+    <div class="alert alert-danger">@TempData["MessageFKReference"]</div>
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add your meta tags and title here -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3>Search Order</h3>
+                        </h5><br />
+
+                        <!-- Search Form -->
+                        <form class="" role="form" asp-action="OrdersSearch" asp-controller="Orders" asp-area="Orders">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-sm-6 col-lg-4">
+
+                                            <label class="form-label">MenuItemName :</label>
+                                            <input type="text" name="MenuItemName" class="form-control dt-input dt-full-name" data-column="1" placeholder="MenuItemName" data-column-index="0" fdprocessedid="2u7jd">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="m-3 btn btn-outline-success" type="submit">Search</button>
+                            <button class="m-3 btn btn-outline-dark" type="submit" asp-action="OrdersSearch" asp-controller="Orders" asp-area="Orders">Clear</button>
+                        </form>
+                        <!-- End Search Form -->
+                    </div>
+                </div>
+            </div>
+
+    <!-- Users List Card -->
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <h3>OrderList</h3>
+                </h5><br />
+
+
+                <!-- Add Users Button -->
+                <div class="nav-link ml-auto">
+                    <a class="btn btn-outline-success" asp-area="Orders" asp-controller="Orders" asp-action="OrdersAddEdit" asp-route-OrderItemID="@Convert.ToInt32(0)">+ Add Order</a>
+                </div>
+
+
+                <!-- Table with stripped rows -->
+                <div class="table-responsive">
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">OrderItemID</th>
+                                <th scope="col">TotalAmount</th>
+                                @* <th scope="col">OrderID</th> *@
+                                <th scope="col">Subtotal</th>
+                                <th scope="col">Qty</th>
+                                @* <th scope="col">MenuItemID</th> *@
+                                <th scope="col">MenuItemName</th>
+                                <th scope="col">Created</th>
+                                <th scope="col">Modified</th>
+                                <th scope="col">Edit</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        @foreach (var dr in Model)
+                        {
+                            <tbody>
+                                <tr>
+                                    <td>@dr.OrderItemID</td>
+                                    <td>@dr.TotalAmount</td>
+                                    @*  <td>@dr.OrderID</td> *@
+                                    <td>@dr.Subtotal</td>
+                                    <td>@dr.Qty</td>
+                                    @*   <td>@dr.MenuItemID</td> *@
+                                    <td>@dr.MenuItemName</td>
+
+                                    <td>@Convert.ToDateTime(dr.Created).ToString("dd-MM-yyyy")</td>
+                                    <td>@Convert.ToDateTime(dr.Modified).ToString("dd-MM-yyyy")</td>
+
+                                    <td>
+                                        <form method="post" asp-area="Orders" asp-controller="Orders" asp-action="OrdersAddEdit" asp-route-OrderItemID="@dr.OrderItemID">
+                                            <button type="submit" class="btn btn-outline-success"><i class="ti-file btn-icon-append"></i></button>
+                                        </form>
+                                    </td>
+                                    <td>
+
+
+                                        <a type="button" onclick="return confirm('Are you sure you want to delete record?')" asp-area="Orders" asp-controller="Orders" asp-action="DeleteOrder" asp-route-OrderItemID="@dr.OrderItemID" class="btn btn-outline-danger"><i class="ti-trash btn-icon-append"></i></a>
+
+
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+                <!-- End Table with stripped rows -->
+            </div>
+        </div>
+    </div>
+    <!-- End Users List Card -->
+        </div>
+    </div>
+</body>
+
+</html>
